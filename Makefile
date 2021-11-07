@@ -1,5 +1,5 @@
-prompt: prompt.c
-	$(CC) prompt.c -o prompt -ledit -Wall -Wextra -pedantic -std=c99
+parsing: parsing.c
+	$(CC) -std=c99 -Wall parsing.c mpc.c -ledit -lm -o parsing
 
 clean: 
-	rm ./prompt
+	rm ./parsing
